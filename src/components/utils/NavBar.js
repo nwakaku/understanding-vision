@@ -1,7 +1,7 @@
 import React from 'react'
 import './Nav.css'
 
-const NavBar = () => {
+export const NavBar = () => {
     return (
         <div>
           <nav className="navbar navbar-expand">
@@ -52,5 +52,3 @@ const NavBar = () => {
         </div>
     )
 }
-
-export default NavBar

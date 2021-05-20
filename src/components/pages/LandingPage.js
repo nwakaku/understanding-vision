@@ -1,4 +1,4 @@
-import NavBar from "../utils/NavBar"
+import { NavBar} from "../utils/NavBar"
 
 
 const LandingPage = () => {
