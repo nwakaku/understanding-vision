@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans&display=swap');
+:root{
+    --Playfair:'Dancing Script', serif;
+    --Quicksand: 'Lobster ', cursive;
+}
+
+.input {
+    width: 500px;
+}
+span.backs{
+    background-color: blue;
+}
+span > i{
+    color: gainsboro;
+}
+div.dropdown{
+    font-size: 13px;
+    padding: 10px;
+}
+div > a{
+    margin: 10px;
+}
+.cart {
+    background-color: gray;
+    position: absolute;
+    z-index: 1;
+    margin-left: 10px;
+    margin-top: -55px;
+}
+
+.circle {
+    border: 1px solid gray;
+    border-radius: 50%;
+    padding: 5px;
+    margin: 5px;
+}
+
+.logo {
+    font-family: 'Lobster', cursive;
+}
