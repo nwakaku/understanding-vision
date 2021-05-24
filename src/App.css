@@ -1,0 +1,16 @@
+.card{
+    width: 40%;
+    padding: 20px;
+    margin-left: 350px;
+    margin-top: 120px;
+
+}
+div.text-center > .button{
+    border-radius: 50%;
+}
+.navbar{
+    background-color: whitesmoke;
+}
+.betty{
+    color: white;
+}

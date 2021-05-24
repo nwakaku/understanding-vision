@@ -1,10 +1,12 @@
 import React from 'react'
 import './Nav.css'
+import { Link, useHistory } from "react-router-dom"
+
 
 export const NavBar = () => {
     return (
         <div>
-          <nav className="navbar navbar-expand">
+          <nav className="navbar fixed-top navbar-expand">
             <div class="container-fluid">
               <a class=" logo navbar-brand">Material-hub</a>
               <div class=" input navbar-brand">
@@ -43,7 +45,7 @@ export const NavBar = () => {
                     
                     <div class="dropdown">
                       <a>Welcome! user</a><br/>
-                      <a>Signup</a>||<a>Sign in</a>
+                      <a><Link to='/signup'>Signup</Link></a>||<a><Link to='/login'>Sign in</Link></a>
                     </div>
                   </ul>
               </div>

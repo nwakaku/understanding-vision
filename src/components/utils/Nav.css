@@ -38,3 +38,14 @@ div > a{
 .logo {
     font-family: 'Lobster', cursive;
 }
+
+img {
+    max-width: 100%;
+    max-height: fit-content;
+}
+.carousel{
+    margin-left: 100px;
+    max-width: 1000px;
+    height: 300px;
+    border: 2px solid red;
+}
