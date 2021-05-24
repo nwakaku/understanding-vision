@@ -1,9 +1,12 @@
-import React from 'react'
+import React,{useContext} from 'react'
 import './Nav.css'
 import { Link, useHistory } from "react-router-dom"
+import {SimContext} from '../../SimContext';
 
 
 export const NavBar = () => {
+  const {cartItems} =useContext(SimContext)
+
     return (
         <div>
           <nav className="navbar fixed-top navbar-expand">
@@ -29,10 +32,12 @@ export const NavBar = () => {
                   <div class="circle">
                     <li class="nav-item me-3 me-lg-0">
                       <a class="nav-link" href="#">
-                        <i class="fas fa-shopping-cart"></i>
+                        <Link to='/cartBasket'>
+                          <i class="fas fa-shopping-cart"></i>
+                        </Link>
                       </a>
                     </li> 
-                       <span class=" cart badge rounded-pill ">5</span>
+                       <span class=" cart badge rounded-pill ">{cartItems.length}</span>
                   </div>
 
                   <div class="circle">
@@ -45,7 +50,7 @@ export const NavBar = () => {
                     
                     <div class="dropdown">
                       <a>Welcome! user</a><br/>
-                      <a><Link to='/signup'>Signup</Link></a>||<a><Link to='/login'>Sign in</Link></a>
+                      <Link to='/signup'>Signup</Link>||<Link to='/login'>Sign in</Link>
                     </div>
                   </ul>
               </div>

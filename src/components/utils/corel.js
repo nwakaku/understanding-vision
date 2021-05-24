@@ -7,7 +7,7 @@ const corel = () => {
   <Carousel.Item>
     <img
       className="d-block w-100"
-      src="holder.js/800x400?text=First slide&bg=373940"
+      src="https://picsum.photos/200/300"
       alt="First slide"
     />
     <Carousel.Caption>
@@ -18,7 +18,7 @@ const corel = () => {
   <Carousel.Item>
     <img
       className="d-block w-100"
-      src="holder.js/800x400?text=Second slide&bg=282c34"
+      src="https://picsum.photos/200/300"
       alt="Second slide"
     />
 
@@ -30,7 +30,7 @@ const corel = () => {
   <Carousel.Item>
     <img
       className="d-block w-100"
-      src="holder.js/800x400?text=Third slide&bg=20232a"
+      src="https://picsum.photos/200/300"
       alt="Third slide"
     />
 

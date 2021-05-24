@@ -1,17 +1,18 @@
+import React from 'react'
+import Basket from '../utils/Basket'
 import Main from "../utils/Main"
 import { NavBar} from "../utils/NavBar"
 import { NavBar2 } from "../utils/NavBar2"
 
 
-const LandingPage = ({products, cartItems, onAdd}) => {
+const CartBasket = ({ cartItems, onAdd}) => {
     return (
         <div>
             <NavBar cartItems={cartItems}/>
             <NavBar2 />
-            <Main products={products, onAdd}/>
-            you are welcome
+            <Basket cartItems={cartItems} onAdd={onAdd} />
         </div>
     )
 }
 
-export default LandingPage
+export default CartBasket
