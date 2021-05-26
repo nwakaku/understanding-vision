@@ -1,7 +1,8 @@
 .footer{
     height: 20px;
     margin: 20px;
+    background-color: black;
 }
-.feet{
-    background-color: rgba(0, 0, 0, 0.2);
+h6{
+    font-family: 'Dancing Script', serif ;
 }

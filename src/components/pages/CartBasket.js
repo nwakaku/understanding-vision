@@ -8,9 +8,8 @@ import { NavBar2 } from "../utils/NavBar2"
 const CartBasket = ({ cartItems, onAdd}) => {
     return (
         <div>
-            <NavBar cartItems={cartItems}/>
-            <NavBar2 />
-            <Basket cartItems={cartItems} onAdd={onAdd} />
+            <NavBar />
+            <Basket />
         </div>
     )
 }

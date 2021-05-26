@@ -1,0 +1,43 @@
+.basket{
+    background-color: transparent;
+    max-width: 1400px;
+    margin: 20px;
+    margin-top: 100px;
+    font-weight: 700px;
+
+}
+h2{
+    font-family: cursive;
+    font-weight: 700px;
+}
+.sum > a{
+    font-weight: 700;
+    font-size: 12px;
+}
+.individual{
+    border: 1px solid gold;
+    max-width: 700px;
+    display: grid;
+    grid-template-columns: 1fr 4fr auto;
+    margin: 20px;
+    margin-left: 250px;
+    text-align: center;
+    background-color: white;
+}
+img{
+    width: 80px;
+    margin: 10px;
+}
+.button{
+    margin-top: 0px;
+    padding: 10px;
+}
+.payment{
+    text-align: center;
+    font-family: monospace;
+    margin: 10px 400px;
+}
+.total{
+    display: grid;
+    grid-template-columns: auto auto;
+}

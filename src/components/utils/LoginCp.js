@@ -70,7 +70,7 @@ export const LoginCp = () => {
 
                         {/* <!-- Register buttons --> */}
                         <div class="text-center">
-                            <p>Not a member? <a href="#!">Register</a></p>
+                            <p>Not a member? <Link to='/signup'><a href="#!">Register</a></Link></p>
                             <p>or sign up with:</p>
                             <button type="button" class="btn btn-primary btn-floating mx-1">
                             <i class="fab fa-facebook-f"></i>

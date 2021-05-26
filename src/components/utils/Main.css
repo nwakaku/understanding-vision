@@ -5,7 +5,8 @@
 
 p{
     font-family: var(--main);
-    margin: 20px;
+    margin: 40px;
+    margin-top: 40px;
 }
 
 .body{
@@ -13,7 +14,7 @@ p{
     margin-left: 30px;
     margin-right: 30px;
     margin-top: -40px;
-    height: 750px;
+    height: 600px;
     background-color: white;
 }
 .stuffs{
