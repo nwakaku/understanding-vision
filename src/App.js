@@ -1,3 +1,4 @@
+import {SimProvider} from './SimContext';
 import './App.css';
 import LandingPage from './components/pages/LandingPage';
 import CartBasket from './components/pages/CartBasket';
@@ -6,7 +7,6 @@ import Signup from './components/pages/Signup';
 import Login from './components/pages/Login';
 import data from './components/context/data';
 import { useState } from 'react';
-import {SimProvider} from './SimContext';
 
 function App() {
 

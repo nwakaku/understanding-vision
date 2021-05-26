@@ -1,13 +1,18 @@
-// import React,{ useContext, useEffect, useState } from 'react'
+import React,{ useContext, useEffect, useState } from 'react'
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as Yup from 'yup'
-// import { UserContext } from '../userContext';
+import {SimContext} from '../../SimContext';
 import TextError from './TextError';
 // import { auth } from '../firebase';
 import { Link, useHistory } from "react-router-dom"
 
 
 export const SignCp = () => {
+    const {signup, users} = useContext(SimContext);
+    const [error, setError] = useState('');
+    const [loading, setLoading] = useState(false)
+    const history = useHistory();
+
     const initialValues = {
         username: '',
         email: '',
@@ -23,7 +28,23 @@ export const SignCp = () => {
     });
 
     const onSubmit = (values) => {
-        
+        if(values.comfirmPassword !== values.password){
+            return setError('password do not match')
+        }
+        setError('');
+        setLoading(true);
+        const email = values.email;
+        const password = values.password;
+        const fullName = values.username;
+        signup(email, password, fullName)
+          .then((ref) => {
+            setLoading(false);
+            history.push("/")
+          })
+          .catch((err) => {
+            setError(err.message);
+            setLoading(false);
+          });
           console.log("clicked", values)
       };
           
